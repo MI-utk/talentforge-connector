@@ -42,18 +42,32 @@ export const Solution = () => {
   return (
     <section className="py-20 px-4 bg-testera-50">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          Introducing Testera —The Future of Job Matching
-        </h2>
-        <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-          At Testera, we make hiring smarter, faster, and more transparent. Our
-          platform connects job seekers with employers through AI-driven tests
-          designed to assess real-world skills.
-        </p>
+        <div className="text-center mb-16">
+          <img
+            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80"
+            alt="Technology Platform"
+            className="w-24 h-24 mx-auto mb-8 rounded-full object-cover"
+          />
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Introducing Testera —The Future of Job Matching
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            At Testera, we make hiring smarter, faster, and more transparent. Our
+            platform connects job seekers with employers through AI-driven tests
+            designed to assess real-world skills.
+          </p>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-16">
           <div>
-            <h3 className="text-2xl font-bold mb-8">For Employers</h3>
+            <div className="mb-8">
+              <img
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80"
+                alt="Employer Features"
+                className="w-full h-48 object-cover rounded-lg mb-6"
+              />
+              <h3 className="text-2xl font-bold mb-8">For Employers</h3>
+            </div>
             <div className="space-y-6">
               {EmployerFeatures.map((feature) => (
                 <div key={feature.title} className="flex gap-4">
@@ -70,7 +84,14 @@ export const Solution = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold mb-8">For Job Seekers</h3>
+            <div className="mb-8">
+              <img
+                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80"
+                alt="Job Seeker Features"
+                className="w-full h-48 object-cover rounded-lg mb-6"
+              />
+              <h3 className="text-2xl font-bold mb-8">For Job Seekers</h3>
+            </div>
             <div className="space-y-6">
               {JobSeekerFeatures.map((feature) => (
                 <div key={feature.title} className="flex gap-4">
