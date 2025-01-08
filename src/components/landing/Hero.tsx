@@ -15,7 +15,7 @@ export const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="text-shadow-lg">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-testera-green via-testera-mint to-white">
-              Unlock Opportunities with Real-World Skill Tests and AI-Driven Hiring
+              Effortless Hiring Starts Here: Skills-Focused, AI-Optimized.
             </h1>
             <p className="text-xl md:text-2xl text-white drop-shadow-lg mb-8 font-medium">
               AI-Powered Skill Assessments, Flexible Job Applications, and Real-Time
