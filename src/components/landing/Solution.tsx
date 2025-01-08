@@ -43,11 +43,6 @@ export const Solution = () => {
     <section className="py-20 px-4 bg-testera-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <img
-            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80"
-            alt="Technology Platform"
-            className="w-24 h-24 mx-auto mb-8 rounded-full object-cover"
-          />
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Introducing Testera —The Future of Job Matching
           </h2>
