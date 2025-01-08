@@ -10,22 +10,22 @@ export const Hero = () => {
         backgroundPosition: 'center',
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-testera-emerald/95 to-white" />
+      <div className="absolute inset-0 bg-gradient-to-b from-testera-firefly/95 via-testera-emerald/90 to-white" />
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-testera-green to-testera-mint">
+          <div className="text-shadow-lg">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-testera-green via-testera-mint to-white">
               Unlock Opportunities with Real-World Skill Tests and AI-Driven Hiring
             </h1>
-            <p className="text-xl md:text-2xl text-white mb-8">
+            <p className="text-xl md:text-2xl text-white drop-shadow-lg mb-8 font-medium">
               AI-Powered Skill Assessments, Flexible Job Applications, and Real-Time
               Feedback—All in One Platform.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-testera-green hover:bg-testera-mint text-testera-firefly">
+              <Button size="lg" className="bg-testera-green hover:bg-testera-mint text-testera-firefly font-semibold shadow-lg">
                 Find Jobs
               </Button>
-              <Button size="lg" variant="outline" className="border-testera-green text-testera-green hover:bg-testera-mint/10">
+              <Button size="lg" variant="outline" className="border-testera-green text-testera-green hover:bg-testera-mint/10 font-semibold shadow-lg">
                 Post a Job
               </Button>
             </div>
