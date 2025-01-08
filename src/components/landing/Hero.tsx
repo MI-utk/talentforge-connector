@@ -17,7 +17,7 @@ export const Hero = () => {
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-testera-green to-testera-mint">
               Unlock Opportunities with Real-World Skill Tests and AI-Driven Hiring
             </h1>
-            <p className="text-xl md:text-2xl text-testera-zircon mb-8">
+            <p className="text-xl md:text-2xl text-white mb-8">
               AI-Powered Skill Assessments, Flexible Job Applications, and Real-Time
               Feedback—All in One Platform.
             </p>
