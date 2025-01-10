@@ -4,21 +4,21 @@ import { Input } from "@/components/ui/input";
 export const Hero = () => {
   return (
     <div 
-      className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 bg-gradient-to-b from-testera-emerald/90 to-white relative"
+      className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 bg-[#222222] relative"
       style={{
         backgroundImage: 'url(https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-testera-firefly/95 via-testera-emerald/90 to-white" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#222222]/95 via-[#333333]/90 to-white" />
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         <div className="flex flex-col items-center gap-8">
           <div className="text-shadow-lg max-w-4xl">
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-testera-green via-testera-mint to-white">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg text-white">
               Find your candidate in minutes
             </h1>
-            <p className="text-xl md:text-2xl text-white drop-shadow-lg mb-8 font-medium">
+            <p className="text-xl md:text-2xl text-[#C8C8C9] drop-shadow-lg mb-8 font-medium">
               AI-Powered Skill Assessments, Flexible Job Applications, and Real-Time
               Feedback—All in One Platform.
             </p>
