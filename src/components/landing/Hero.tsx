@@ -5,11 +5,6 @@ export const Hero = () => {
   return (
     <div 
       className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 bg-[#222222] relative"
-      style={{
-        backgroundImage: 'url(https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-[#222222]/95 via-[#333333]/90 to-white" />
       <div className="relative z-10 max-w-7xl mx-auto w-full">
