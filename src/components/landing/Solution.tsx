@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const EmployerFeatures = [
   {
@@ -53,55 +54,62 @@ export const Solution = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16">
-          <div>
-            <div className="mb-8">
-              <img
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80"
-                alt="Employer Features"
-                className="w-full h-48 object-cover rounded-lg mb-6"
-              />
-              <h3 className="text-2xl font-bold mb-8 text-testera-emerald">For Employers</h3>
-            </div>
-            <div className="space-y-6">
-              {EmployerFeatures.map((feature) => (
-                <div key={feature.title} className="flex gap-4">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-testera-green/20 flex items-center justify-center mt-1">
-                    <Check className="w-4 h-4 text-testera-emerald" />
+        <Tabs defaultValue="employers" className="w-full">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12">
+            <TabsTrigger value="employers">For Employers</TabsTrigger>
+            <TabsTrigger value="jobseekers">For Job Seekers</TabsTrigger>
+          </TabsList>
+          
+          <TabsContent value="employers" className="mt-0">
+            <div>
+              <div className="mb-8">
+                <img
+                  src="/lovable-uploads/dea23ff1-85f4-4631-8702-1d6d37f2286b.png"
+                  alt="Employer Features"
+                  className="w-full h-48 object-cover rounded-lg mb-6"
+                />
+              </div>
+              <div className="space-y-6">
+                {EmployerFeatures.map((feature) => (
+                  <div key={feature.title} className="flex gap-4">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-testera-green/20 flex items-center justify-center mt-1">
+                      <Check className="w-4 h-4 text-testera-emerald" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-2 text-testera-emerald">{feature.title}</h4>
+                      <p className="text-gray-600">{feature.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold mb-2 text-testera-emerald">{feature.title}</h4>
-                    <p className="text-gray-600">{feature.description}</p>
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
+          </TabsContent>
 
-          <div>
-            <div className="mb-8">
-              <img
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80"
-                alt="Job Seeker Features"
-                className="w-full h-48 object-cover rounded-lg mb-6"
-              />
-              <h3 className="text-2xl font-bold mb-8 text-testera-emerald">For Job Seekers</h3>
-            </div>
-            <div className="space-y-6">
-              {JobSeekerFeatures.map((feature) => (
-                <div key={feature.title} className="flex gap-4">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-testera-green/20 flex items-center justify-center mt-1">
-                    <Check className="w-4 h-4 text-testera-emerald" />
+          <TabsContent value="jobseekers" className="mt-0">
+            <div>
+              <div className="mb-8">
+                <img
+                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80"
+                  alt="Job Seeker Features"
+                  className="w-full h-48 object-cover rounded-lg mb-6"
+                />
+              </div>
+              <div className="space-y-6">
+                {JobSeekerFeatures.map((feature) => (
+                  <div key={feature.title} className="flex gap-4">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-testera-green/20 flex items-center justify-center mt-1">
+                      <Check className="w-4 h-4 text-testera-emerald" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-2 text-testera-emerald">{feature.title}</h4>
+                      <p className="text-gray-600">{feature.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold mb-2 text-testera-emerald">{feature.title}</h4>
-                    <p className="text-gray-600">{feature.description}</p>
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        </div>
+          </TabsContent>
+        </Tabs>
       </div>
     </section>
   );
