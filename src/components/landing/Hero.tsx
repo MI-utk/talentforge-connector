@@ -3,20 +3,11 @@ import { Input } from "@/components/ui/input";
 
 export const Hero = () => {
   return (
-    <div 
-      className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden"
-    >
+    <div className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden">
       <div 
-        className="absolute inset-0 animate-gradient" 
+        className="absolute inset-0 bg-gradient-to-r from-palette-darkest via-palette-darker via-palette-dark to-palette-yellow animate-gradient"
         style={{
-          background: "linear-gradient(-45deg, #000814, #001D3D, #003566, #FFC300, #FFD60A)",
           backgroundSize: "400% 400%",
-        }}
-      />
-      <div 
-        className="absolute inset-0" 
-        style={{
-          background: "linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 40%, rgba(249,250,251,0.4) 60%, rgba(249,250,251,0.8) 80%, rgb(249,250,251) 100%)"
         }}
       />
       <div className="relative z-10 max-w-7xl mx-auto w-full">
@@ -29,16 +20,16 @@ export const Hero = () => {
               <Input 
                 type="text" 
                 placeholder="Describe who you want to hire"
-                className="bg-white/90 text-testera-firefly placeholder:text-testera-firefly/60 h-12"
+                className="bg-white/90 text-palette-darkest placeholder:text-palette-darker/60 h-12"
               />
               <Button 
                 size="lg" 
-                className="bg-testera-green hover:bg-testera-mint text-testera-firefly font-semibold shadow-lg whitespace-nowrap h-12"
+                className="bg-palette-yellow hover:bg-palette-lightyellow text-palette-darkest font-semibold shadow-lg whitespace-nowrap h-12"
               >
                 Launch Job Now
               </Button>
             </div>
-            <p className="text-xl md:text-2xl text-[#C8C8C9] drop-shadow-lg font-medium">
+            <p className="text-xl md:text-2xl text-palette-yellow drop-shadow-lg font-medium">
               AI-Powered Skill Assessments, Flexible Job Applications, and Real-Time
               Feedback—All in One Platform.
             </p>
