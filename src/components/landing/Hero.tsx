@@ -17,7 +17,7 @@ export const Hero = () => {
         }}
       />
       {/* Add a gradient overlay that fades to transparent at the bottom */}
-      <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-gray-50" />
+      <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-b from-transparent to-gray-50" />
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         <div className="flex flex-col items-center gap-8">
           <div className="text-shadow-lg max-w-4xl">
