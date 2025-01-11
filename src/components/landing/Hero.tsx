@@ -16,8 +16,13 @@ export const Hero = () => {
           backgroundSize: "400% 400%",
         }}
       />
-      {/* Add a gradient overlay that transitions through the entire section */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gray-50" />
+      {/* Add a gradient overlay with multiple color stops for smoother transition */}
+      <div 
+        className="absolute inset-0" 
+        style={{
+          background: "linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 40%, rgba(249,250,251,0.4) 60%, rgba(249,250,251,0.8) 80%, rgb(249,250,251) 100%)"
+        }}
+      />
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         <div className="flex flex-col items-center gap-8">
           <div className="text-shadow-lg max-w-4xl">
