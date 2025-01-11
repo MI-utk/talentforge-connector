@@ -52,12 +52,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        palette: {
-          lightest: "#E3F2FD",
-          lighter: "#BBDEF8",
-          light: "#90CAF9",
-          medium: "#64B5F6",
-          dark: "#42A5F5",
+        testera: {
+          emerald: "#014751",
+          firefly: "#0F2830",
+          zircon: "#BFBFBF",
+          green: "#00D3D7",
+          mint: "#A4FFBC",
+          banana: "#FFFEB4",
+          lilac: "#E0DCAF",
         },
       },
       borderRadius: {
