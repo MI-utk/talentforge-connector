@@ -4,9 +4,18 @@ import { Input } from "@/components/ui/input";
 export const Hero = () => {
   return (
     <div 
-      className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 bg-[#222222] relative"
+      className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden"
+      style={{
+        background: "linear-gradient(-45deg, #014751, #0F2830, #00D3D7, #A4FFBC)",
+        backgroundSize: "400% 400%",
+      }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-[#222222]/95 via-[#333333]/90 to-white" />
+      <div className="absolute inset-0 animate-gradient" 
+        style={{
+          background: "linear-gradient(-45deg, #014751, #0F2830, #00D3D7, #A4FFBC)",
+          backgroundSize: "400% 400%",
+        }}
+      />
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         <div className="flex flex-col items-center gap-8">
           <div className="text-shadow-lg max-w-4xl">
