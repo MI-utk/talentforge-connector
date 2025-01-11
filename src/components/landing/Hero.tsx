@@ -9,7 +9,7 @@ export const Hero = () => {
       <div 
         className="absolute inset-0 animate-gradient" 
         style={{
-          background: "radial-gradient(circle at center, #014751, #0F2830, #00D3D7, #A4FFBC)",
+          background: "radial-gradient(circle at center, #000814, #001D3D, #003566, #FFC300, #FFD60A)",
           backgroundSize: "400% 400%",
         }}
       />
