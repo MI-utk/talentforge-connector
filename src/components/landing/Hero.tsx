@@ -5,18 +5,14 @@ export const Hero = () => {
   return (
     <div 
       className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden"
-      style={{
-        background: "radial-gradient(circle at center, #014751, #0F2830, #00D3D7, #A4FFBC)",
-        backgroundSize: "400% 400%",
-      }}
     >
-      <div className="absolute inset-0 animate-gradient" 
+      <div 
+        className="absolute inset-0 animate-gradient" 
         style={{
           background: "radial-gradient(circle at center, #014751, #0F2830, #00D3D7, #A4FFBC)",
           backgroundSize: "400% 400%",
         }}
       />
-      {/* Add a gradient overlay with multiple color stops for smoother transition */}
       <div 
         className="absolute inset-0" 
         style={{
