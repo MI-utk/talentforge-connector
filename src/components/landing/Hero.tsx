@@ -21,11 +21,11 @@ export const Hero = () => {
               <Input 
                 type="text" 
                 placeholder="Describe who you want to hire"
-                className="bg-white/90 text-testera-firefly placeholder:text-testera-firefly/60"
+                className="bg-white/90 text-testera-firefly placeholder:text-testera-firefly/60 h-12"
               />
               <Button 
                 size="lg" 
-                className="bg-testera-green hover:bg-testera-mint text-testera-firefly font-semibold shadow-lg whitespace-nowrap"
+                className="bg-testera-green hover:bg-testera-mint text-testera-firefly font-semibold shadow-lg whitespace-nowrap h-12"
               >
                 Launch Job Now
               </Button>
