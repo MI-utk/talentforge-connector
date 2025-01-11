@@ -13,11 +13,7 @@ export const Hero = () => {
             <h1 className="text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg text-white">
               Find your candidate in minutes
             </h1>
-            <p className="text-xl md:text-2xl text-[#C8C8C9] drop-shadow-lg mb-8 font-medium">
-              AI-Powered Skill Assessments, Flexible Job Applications, and Real-Time
-              Feedback—All in One Platform.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto mb-8">
               <Input 
                 type="text" 
                 placeholder="Describe who you want to hire"
@@ -30,6 +26,10 @@ export const Hero = () => {
                 Launch Job Now
               </Button>
             </div>
+            <p className="text-xl md:text-2xl text-[#C8C8C9] drop-shadow-lg font-medium">
+              AI-Powered Skill Assessments, Flexible Job Applications, and Real-Time
+              Feedback—All in One Platform.
+            </p>
           </div>
         </div>
       </div>
