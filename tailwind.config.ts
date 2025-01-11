@@ -53,11 +53,11 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         palette: {
-          darkest: "#000814",
-          darker: "#001D3D",
-          dark: "#003566",
-          yellow: "#FFC300",
-          lightyellow: "#FFD60A",
+          lightest: "#E3F2FD",
+          lighter: "#BBDEF8",
+          light: "#90CAF9",
+          medium: "#64B5F6",
+          dark: "#42A5F5",
         },
       },
       borderRadius: {
