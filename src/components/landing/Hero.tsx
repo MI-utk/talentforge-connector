@@ -6,17 +6,16 @@ export const Hero = () => {
     <div 
       className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden"
       style={{
-        background: "linear-gradient(-45deg, #014751, #0F2830, #00D3D7, #A4FFBC)",
+        background: "linear-gradient(-45deg, #1A1A1A, #2A2A2A, #404040, #E6E6E6)",
         backgroundSize: "400% 400%",
       }}
     >
       <div className="absolute inset-0 animate-gradient" 
         style={{
-          background: "linear-gradient(-45deg, #014751, #0F2830, #00D3D7, #A4FFBC)",
+          background: "linear-gradient(-45deg, #1A1A1A, #2A2A2A, #404040, #E6E6E6)",
           backgroundSize: "400% 400%",
         }}
       />
-      {/* Add a gradient overlay with multiple color stops for smoother transition */}
       <div 
         className="absolute inset-0" 
         style={{
@@ -33,16 +32,16 @@ export const Hero = () => {
               <Input 
                 type="text" 
                 placeholder="Describe who you want to hire"
-                className="bg-white/90 text-testera-firefly placeholder:text-testera-firefly/60 h-12"
+                className="bg-white/90 text-gray-900 placeholder:text-gray-500 h-12"
               />
               <Button 
                 size="lg" 
-                className="bg-testera-green hover:bg-testera-mint text-testera-firefly font-semibold shadow-lg whitespace-nowrap h-12"
+                className="bg-gray-800 hover:bg-gray-700 text-white font-semibold shadow-lg whitespace-nowrap h-12"
               >
                 Launch Job Now
               </Button>
             </div>
-            <p className="text-xl md:text-2xl text-[#C8C8C9] drop-shadow-lg font-medium">
+            <p className="text-xl md:text-2xl text-gray-300 drop-shadow-lg font-medium">
               AI-Powered Skill Assessments, Flexible Job Applications, and Real-Time
               Feedback—All in One Platform.
             </p>
