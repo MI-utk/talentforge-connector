@@ -1,26 +1,29 @@
-import { Check } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { JobCreationDemo } from "../demos/JobCreationDemo";
+import { AssessmentDemo } from "../demos/AssessmentDemo";
+import { QuestionFormatDemo } from "../demos/QuestionFormatDemo";
+import { ScoringDemo } from "../demos/ScoringDemo";
 
 const EmployerFeatures = [
   {
     title: "AI-Powered Job Creation",
     description: "Publish job listings in seconds with AI assistance that generates job descriptions tailored to real-world job requirements.",
-    image: "/lovable-uploads/f912ad5b-2bc6-45ae-a770-d0e04e518779.png"
+    demo: JobCreationDemo
   },
   {
     title: "Customizable Assessments",
     description: "Design job tests with ease using AI-generated questions that simulate the tasks candidates will face on the job.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+    demo: AssessmentDemo
   },
   {
     title: "Versatile Question Formats",
     description: "Choose from multiple question types: MCQs, audio, video, and descriptive questions for a well-rounded evaluation.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+    demo: QuestionFormatDemo
   },
   {
     title: "AI-Driven Candidate Scoring",
     description: "Assess candidates quickly and accurately using AI-powered scoring that ensures fair and unbiased results.",
-    image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334"
+    demo: ScoringDemo
   },
 ];
 
@@ -28,22 +31,22 @@ const JobSeekerFeatures = [
   {
     title: "Increase Your Visibility",
     description: "Showcase your skills to a wide range of employers without the need for resumes.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+    demo: JobCreationDemo
   },
   {
     title: "Practice Real-World Scenarios",
     description: "Take job tests that simulate actual tasks on the job, helping you improve your skills while preparing for the future.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+    demo: AssessmentDemo
   },
   {
     title: "Apply on Your Schedule",
     description: "Complete job tests and apply for jobs at your own pace, without the need to adhere to rigid schedules.",
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+    demo: QuestionFormatDemo
   },
   {
     title: "One Test, Multiple Opportunities",
     description: "Take a single generic test recognized by multiple companies, boosting your chances of getting hired across a range of industries.",
-    image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952"
+    demo: ScoringDemo
   },
 ];
 
@@ -70,37 +73,35 @@ export const Solution = () => {
           
           <TabsContent value="employers" className="mt-0">
             <div className="space-y-16">
-              {EmployerFeatures.map((feature) => (
-                <div key={feature.title} className="flex flex-col gap-6">
-                  <div>
-                    <h3 className="text-3xl md:text-4xl font-bold mb-3 text-testera-emerald">{feature.title}</h3>
-                    <p className="text-lg text-gray-600">{feature.description}</p>
+              {EmployerFeatures.map((feature) => {
+                const Demo = feature.demo;
+                return (
+                  <div key={feature.title} className="flex flex-col gap-6">
+                    <div>
+                      <h3 className="text-3xl md:text-4xl font-bold mb-3 text-testera-emerald">{feature.title}</h3>
+                      <p className="text-lg text-gray-600">{feature.description}</p>
+                    </div>
+                    <Demo />
                   </div>
-                  <img
-                    src={feature.image}
-                    alt={feature.title}
-                    className="w-full h-[400px] object-cover rounded-lg shadow-lg"
-                  />
-                </div>
-              ))}
+                );
+              })}
             </div>
           </TabsContent>
 
           <TabsContent value="jobseekers" className="mt-0">
             <div className="space-y-16">
-              {JobSeekerFeatures.map((feature) => (
-                <div key={feature.title} className="flex flex-col gap-6">
-                  <div>
-                    <h3 className="text-3xl md:text-4xl font-bold mb-3 text-testera-emerald">{feature.title}</h3>
-                    <p className="text-lg text-gray-600">{feature.description}</p>
+              {JobSeekerFeatures.map((feature) => {
+                const Demo = feature.demo;
+                return (
+                  <div key={feature.title} className="flex flex-col gap-6">
+                    <div>
+                      <h3 className="text-3xl md:text-4xl font-bold mb-3 text-testera-emerald">{feature.title}</h3>
+                      <p className="text-lg text-gray-600">{feature.description}</p>
+                    </div>
+                    <Demo />
                   </div>
-                  <img
-                    src={feature.image}
-                    alt={feature.title}
-                    className="w-full h-[400px] object-cover rounded-lg shadow-lg"
-                  />
-                </div>
-              ))}
+                );
+              })}
             </div>
           </TabsContent>
         </Tabs>
