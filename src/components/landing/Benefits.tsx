@@ -42,22 +42,22 @@ export const Benefits = () => {
   return (
     <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-testera-heading">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-testera-emerald">
           Benefits
         </h2>
 
         <div className="grid md:grid-cols-2 gap-16">
           <div>
-            <h3 className="text-2xl font-bold mb-8 text-testera-heading">For Employers</h3>
+            <h3 className="text-2xl font-bold mb-8 text-testera-emerald">For Employers</h3>
             <div className="space-y-8">
               {employerBenefits.map((benefit) => (
                 <div key={benefit.title} className="flex gap-4">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-testera-green/20 flex items-center justify-center mt-1">
-                    <Check className="w-4 h-4 text-testera-heading" />
+                    <Check className="w-4 h-4 text-testera-emerald" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 text-testera-heading">{benefit.title}</h4>
-                    <p className="text-testera-subheading leading-relaxed">{benefit.description}</p>
+                    <h4 className="font-semibold mb-2 text-testera-emerald">{benefit.title}</h4>
+                    <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
                   </div>
                 </div>
               ))}
@@ -65,16 +65,16 @@ export const Benefits = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold mb-8 text-testera-heading">For Job Seekers</h3>
+            <h3 className="text-2xl font-bold mb-8 text-testera-emerald">For Job Seekers</h3>
             <div className="space-y-8">
               {jobSeekerBenefits.map((benefit) => (
                 <div key={benefit.title} className="flex gap-4">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-testera-green/20 flex items-center justify-center mt-1">
-                    <Check className="w-4 h-4 text-testera-heading" />
+                    <Check className="w-4 h-4 text-testera-emerald" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 text-testera-heading">{benefit.title}</h4>
-                    <p className="text-testera-subheading leading-relaxed">{benefit.description}</p>
+                    <h4 className="font-semibold mb-2 text-testera-emerald">{benefit.title}</h4>
+                    <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
                   </div>
                 </div>
               ))}

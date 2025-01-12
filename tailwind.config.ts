@@ -60,9 +60,6 @@ export default {
           mint: "#E6E6E6",
           banana: "#F5F5F5",
           lilac: "#D9D9D9",
-          heading: "#16271A",
-          subheading: "#214531",
-          background: "#E4F1E9",
         },
       },
       borderRadius: {
