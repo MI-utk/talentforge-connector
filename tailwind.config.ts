@@ -90,16 +90,16 @@ export default {
         },
         glow: {
           "0%": {
-            boxShadow: "0 0 50px rgba(255, 255, 255, 0.5)",
-            background: "rgba(255, 255, 255, 0.1)",
-          },
-          "50%": {
             boxShadow: "0 0 100px rgba(255, 255, 255, 0.8)",
             background: "rgba(255, 255, 255, 0.2)",
           },
+          "50%": {
+            boxShadow: "0 0 200px rgba(255, 255, 255, 0.9)",
+            background: "rgba(255, 255, 255, 0.4)",
+          },
           "100%": {
-            boxShadow: "0 0 50px rgba(255, 255, 255, 0.5)",
-            background: "rgba(255, 255, 255, 0.1)",
+            boxShadow: "0 0 100px rgba(255, 255, 255, 0.8)",
+            background: "rgba(255, 255, 255, 0.2)",
           },
         },
       },
