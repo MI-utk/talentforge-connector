@@ -91,7 +91,7 @@ export const Solution = () => {
           </TabsList>
           
           <TabsContent value="employers" className="mt-0">
-            <div className="space-y-0">
+            <div className="relative">
               {EmployerFeatures.map((feature, index) => (
                 <div 
                   key={feature.title} 
@@ -99,10 +99,10 @@ export const Solution = () => {
                     index === activeIndex ? 'opacity-100' : 'opacity-0'
                   }`}
                   style={{
-                    position: index === 0 ? 'relative' : 'absolute',
-                    top: index === 0 ? '0' : `${index * 100}vh`,
-                    width: '100%',
-                    visibility: Math.abs(index - activeIndex) <= 1 ? 'visible' : 'hidden'
+                    position: 'absolute',
+                    top: `${index * 100}vh`,
+                    left: 0,
+                    right: 0
                   }}
                 >
                   <div className="px-4 py-16 max-w-4xl mx-auto">
@@ -119,10 +119,11 @@ export const Solution = () => {
                 </div>
               ))}
             </div>
+            <div style={{ height: `${EmployerFeatures.length * 100}vh` }} />
           </TabsContent>
 
           <TabsContent value="jobseekers" className="mt-0">
-            <div className="space-y-0">
+            <div className="relative">
               {JobSeekerFeatures.map((feature, index) => (
                 <div 
                   key={feature.title} 
@@ -130,10 +131,10 @@ export const Solution = () => {
                     index === activeIndex ? 'opacity-100' : 'opacity-0'
                   }`}
                   style={{
-                    position: index === 0 ? 'relative' : 'absolute',
-                    top: index === 0 ? '0' : `${index * 100}vh`,
-                    width: '100%',
-                    visibility: Math.abs(index - activeIndex) <= 1 ? 'visible' : 'hidden'
+                    position: 'absolute',
+                    top: `${index * 100}vh`,
+                    left: 0,
+                    right: 0
                   }}
                 >
                   <div className="px-4 py-16 max-w-4xl mx-auto">
@@ -150,6 +151,7 @@ export const Solution = () => {
                 </div>
               ))}
             </div>
+            <div style={{ height: `${JobSeekerFeatures.length * 100}vh` }} />
           </TabsContent>
         </Tabs>
       </div>
