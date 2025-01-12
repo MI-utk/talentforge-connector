@@ -108,7 +108,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         fadeIn: "fadeIn 0.5s ease-out forwards",
         gradient: "gradient 15s ease infinite",
-        glow: "glow 3s ease-in-out infinite",
+        glow: "glow 6s ease-in-out infinite", // Changed from 3s to 6s to make it slower
       },
     },
   },
