@@ -90,16 +90,16 @@ export default {
         },
         glow: {
           "0%": {
-            boxShadow: "0 0 100px rgba(255, 255, 255, 0.8)",
-            background: "rgba(255, 255, 255, 0.2)",
+            boxShadow: "0 0 100px rgba(59, 130, 246, 0.8)",
+            background: "rgba(59, 130, 246, 0.2)",
           },
           "50%": {
-            boxShadow: "0 0 200px rgba(255, 255, 255, 0.9)",
-            background: "rgba(255, 255, 255, 0.4)",
+            boxShadow: "0 0 200px rgba(59, 130, 246, 0.9)",
+            background: "rgba(59, 130, 246, 0.4)",
           },
           "100%": {
-            boxShadow: "0 0 100px rgba(255, 255, 255, 0.8)",
-            background: "rgba(255, 255, 255, 0.2)",
+            boxShadow: "0 0 100px rgba(59, 130, 246, 0.8)",
+            background: "rgba(59, 130, 246, 0.2)",
           },
         },
       },
