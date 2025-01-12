@@ -88,12 +88,27 @@ export default {
             "background-position": "100% 50%",
           },
         },
+        glow: {
+          "0%": {
+            boxShadow: "0 0 50px rgba(255, 255, 255, 0.5)",
+            background: "rgba(255, 255, 255, 0.1)",
+          },
+          "50%": {
+            boxShadow: "0 0 100px rgba(255, 255, 255, 0.8)",
+            background: "rgba(255, 255, 255, 0.2)",
+          },
+          "100%": {
+            boxShadow: "0 0 50px rgba(255, 255, 255, 0.5)",
+            background: "rgba(255, 255, 255, 0.1)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         fadeIn: "fadeIn 0.5s ease-out forwards",
         gradient: "gradient 15s ease infinite",
+        glow: "glow 3s ease-in-out infinite",
       },
     },
   },

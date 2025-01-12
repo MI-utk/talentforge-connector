@@ -6,6 +6,7 @@ export const Hero = () => {
     <div 
       className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden bg-white"
     >
+      <div className="absolute inset-0 animate-glow pointer-events-none"></div>
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         <div className="flex flex-col items-center gap-8">
           <div className="text-shadow-lg max-w-4xl">
