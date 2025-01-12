@@ -90,16 +90,16 @@ export default {
         },
         glow: {
           "0%": {
-            boxShadow: "0 0 100px rgba(59, 130, 246, 0.8)",
-            background: "rgba(59, 130, 246, 0.2)",
+            boxShadow: "0 0 100px rgba(255, 255, 255, 0.8)",
+            background: "rgba(255, 255, 255, 0.2)",
           },
           "50%": {
             boxShadow: "0 0 200px rgba(59, 130, 246, 0.9)",
             background: "rgba(59, 130, 246, 0.4)",
           },
           "100%": {
-            boxShadow: "0 0 100px rgba(59, 130, 246, 0.8)",
-            background: "rgba(59, 130, 246, 0.2)",
+            boxShadow: "0 0 100px rgba(255, 255, 255, 0.8)",
+            background: "rgba(255, 255, 255, 0.2)",
           },
         },
       },
@@ -108,7 +108,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         fadeIn: "fadeIn 0.5s ease-out forwards",
         gradient: "gradient 15s ease infinite",
-        glow: "glow 6s ease-in-out infinite", // Changed from 3s to 6s to make it slower
+        glow: "glow 10s ease-in-out infinite", // Changed from 6s to 10s to make it even slower
       },
     },
   },
