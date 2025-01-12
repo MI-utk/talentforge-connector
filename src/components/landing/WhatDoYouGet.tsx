@@ -28,7 +28,7 @@ export const WhatDoYouGet = () => {
     <section className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-testera-emerald">
-          AI Is Here To Help You Hire
+          What Do You Get?
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
           {features.map((feature) => (
