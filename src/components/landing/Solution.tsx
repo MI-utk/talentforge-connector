@@ -1,6 +1,5 @@
-import { Check } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const EmployerFeatures = [
   {
@@ -49,32 +48,28 @@ const JobSeekerFeatures = [
 ];
 
 export const Solution = () => {
-  const observerRef = useRef<IntersectionObserver | null>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    observerRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('opacity-100', 'translate-y-0');
-            entry.target.classList.remove('opacity-0', 'translate-y-10');
-          }
-        });
-      },
-      {
-        threshold: 0.1,
+    const handleScroll = () => {
+      if (!sectionRef.current) return;
+      
+      const sectionHeight = window.innerHeight;
+      const scrollPosition = window.scrollY - sectionRef.current.offsetTop;
+      
+      if (scrollPosition >= 0) {
+        const newIndex = Math.floor(scrollPosition / sectionHeight);
+        setActiveIndex(newIndex);
       }
-    );
+    };
 
-    document.querySelectorAll('.feature-section').forEach((section) => {
-      observerRef.current?.observe(section);
-    });
-
-    return () => observerRef.current?.disconnect();
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <section className="bg-gray-50">
+    <section className="bg-gray-50" ref={sectionRef}>
       <div className="max-w-6xl mx-auto">
         <div className="min-h-screen flex items-center justify-center">
           <div className="text-center px-4">
@@ -97,10 +92,18 @@ export const Solution = () => {
           
           <TabsContent value="employers" className="mt-0">
             <div className="space-y-0">
-              {EmployerFeatures.map((feature) => (
+              {EmployerFeatures.map((feature, index) => (
                 <div 
                   key={feature.title} 
-                  className="feature-section min-h-screen flex items-center justify-center opacity-0 translate-y-10 transition-all duration-700 ease-out"
+                  className={`min-h-screen flex items-center justify-center transition-opacity duration-300 ${
+                    index === activeIndex ? 'opacity-100' : 'opacity-0'
+                  }`}
+                  style={{
+                    position: index === 0 ? 'relative' : 'absolute',
+                    top: index === 0 ? '0' : `${index * 100}vh`,
+                    width: '100%',
+                    visibility: Math.abs(index - activeIndex) <= 1 ? 'visible' : 'hidden'
+                  }}
                 >
                   <div className="px-4 py-16 max-w-4xl mx-auto">
                     <div className="mb-8">
@@ -120,10 +123,18 @@ export const Solution = () => {
 
           <TabsContent value="jobseekers" className="mt-0">
             <div className="space-y-0">
-              {JobSeekerFeatures.map((feature) => (
+              {JobSeekerFeatures.map((feature, index) => (
                 <div 
                   key={feature.title} 
-                  className="feature-section min-h-screen flex items-center justify-center opacity-0 translate-y-10 transition-all duration-700 ease-out"
+                  className={`min-h-screen flex items-center justify-center transition-opacity duration-300 ${
+                    index === activeIndex ? 'opacity-100' : 'opacity-0'
+                  }`}
+                  style={{
+                    position: index === 0 ? 'relative' : 'absolute',
+                    top: index === 0 ? '0' : `${index * 100}vh`,
+                    width: '100%',
+                    visibility: Math.abs(index - activeIndex) <= 1 ? 'visible' : 'hidden'
+                  }}
                 >
                   <div className="px-4 py-16 max-w-4xl mx-auto">
                     <div className="mb-8">
