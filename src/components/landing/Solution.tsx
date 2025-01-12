@@ -1,5 +1,5 @@
+import { Check } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { useEffect, useRef, useState } from "react";
 
 const EmployerFeatures = [
   {
@@ -48,110 +48,60 @@ const JobSeekerFeatures = [
 ];
 
 export const Solution = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!sectionRef.current) return;
-      
-      const sectionHeight = window.innerHeight;
-      const scrollPosition = window.scrollY - sectionRef.current.offsetTop;
-      
-      if (scrollPosition >= 0) {
-        const newIndex = Math.floor(scrollPosition / sectionHeight);
-        setActiveIndex(newIndex);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <section className="bg-gray-50" ref={sectionRef}>
+    <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
-        <div className="min-h-screen flex items-center justify-center">
-          <div className="text-center px-4">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-testera-emerald">
-              Introducing Testera —The Future of Job Matching
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              At Testera, we make hiring smarter, faster, and more transparent. Our
-              platform connects job seekers with employers through AI-driven tests
-              designed to assess real-world skills.
-            </p>
-          </div>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-testera-emerald">
+            Introducing Testera —The Future of Job Matching
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            At Testera, we make hiring smarter, faster, and more transparent. Our
+            platform connects job seekers with employers through AI-driven tests
+            designed to assess real-world skills.
+          </p>
         </div>
 
         <Tabs defaultValue="employers" className="w-full">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12 sticky top-4 z-10 bg-white/80 backdrop-blur-sm">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12">
             <TabsTrigger value="employers">For Employers</TabsTrigger>
             <TabsTrigger value="jobseekers">For Job Seekers</TabsTrigger>
           </TabsList>
           
           <TabsContent value="employers" className="mt-0">
-            <div className="relative">
-              {EmployerFeatures.map((feature, index) => (
-                <div 
-                  key={feature.title} 
-                  className={`min-h-screen flex items-center justify-center transition-opacity duration-300 ${
-                    index === activeIndex ? 'opacity-100' : 'opacity-0'
-                  }`}
-                  style={{
-                    position: 'absolute',
-                    top: `${index * 100}vh`,
-                    left: 0,
-                    right: 0
-                  }}
-                >
-                  <div className="px-4 py-16 max-w-4xl mx-auto">
-                    <div className="mb-8">
-                      <h3 className="text-3xl md:text-4xl font-bold mb-3 text-testera-emerald">{feature.title}</h3>
-                      <p className="text-lg text-gray-600">{feature.description}</p>
-                    </div>
-                    <img
-                      src={feature.image}
-                      alt={feature.title}
-                      className="w-full h-[400px] object-cover rounded-lg shadow-lg"
-                    />
+            <div className="space-y-16">
+              {EmployerFeatures.map((feature) => (
+                <div key={feature.title} className="flex flex-col gap-6">
+                  <div>
+                    <h3 className="text-3xl md:text-4xl font-bold mb-3 text-testera-emerald">{feature.title}</h3>
+                    <p className="text-lg text-gray-600">{feature.description}</p>
                   </div>
+                  <img
+                    src={feature.image}
+                    alt={feature.title}
+                    className="w-full h-[400px] object-cover rounded-lg shadow-lg"
+                  />
                 </div>
               ))}
             </div>
-            <div style={{ height: `${EmployerFeatures.length * 100}vh` }} />
           </TabsContent>
 
           <TabsContent value="jobseekers" className="mt-0">
-            <div className="relative">
-              {JobSeekerFeatures.map((feature, index) => (
-                <div 
-                  key={feature.title} 
-                  className={`min-h-screen flex items-center justify-center transition-opacity duration-300 ${
-                    index === activeIndex ? 'opacity-100' : 'opacity-0'
-                  }`}
-                  style={{
-                    position: 'absolute',
-                    top: `${index * 100}vh`,
-                    left: 0,
-                    right: 0
-                  }}
-                >
-                  <div className="px-4 py-16 max-w-4xl mx-auto">
-                    <div className="mb-8">
-                      <h3 className="text-3xl md:text-4xl font-bold mb-3 text-testera-emerald">{feature.title}</h3>
-                      <p className="text-lg text-gray-600">{feature.description}</p>
-                    </div>
-                    <img
-                      src={feature.image}
-                      alt={feature.title}
-                      className="w-full h-[400px] object-cover rounded-lg shadow-lg"
-                    />
+            <div className="space-y-16">
+              {JobSeekerFeatures.map((feature) => (
+                <div key={feature.title} className="flex flex-col gap-6">
+                  <div>
+                    <h3 className="text-3xl md:text-4xl font-bold mb-3 text-testera-emerald">{feature.title}</h3>
+                    <p className="text-lg text-gray-600">{feature.description}</p>
                   </div>
+                  <img
+                    src={feature.image}
+                    alt={feature.title}
+                    className="w-full h-[400px] object-cover rounded-lg shadow-lg"
+                  />
                 </div>
               ))}
             </div>
-            <div style={{ height: `${JobSeekerFeatures.length * 100}vh` }} />
           </TabsContent>
         </Tabs>
       </div>
