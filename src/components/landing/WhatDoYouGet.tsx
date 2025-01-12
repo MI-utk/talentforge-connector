@@ -33,9 +33,9 @@ export const WhatDoYouGet = () => {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
           {features.map((feature) => (
             <Card key={feature.title} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className={`h-32 ${feature.gradient} flex items-center justify-center`}>
-                <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
-                  <div className="w-10 h-10 rounded-full bg-white/20" />
+              <div className={`h-10 ${feature.gradient} flex items-center justify-center`}>
+                <div className="w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
+                  <div className="w-5 h-5 rounded-full bg-white/20" />
                 </div>
               </div>
               <CardHeader>
