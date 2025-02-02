@@ -12,7 +12,7 @@ export const Hero = () => {
             <img 
               src="/lovable-uploads/d65dd7d2-7249-4d0b-92f1-01d6c26d28b4.png" 
               alt="Testera Logo" 
-              className="w-24 h-24 mx-auto mb-8 invert"
+              className="w-32 h-32 mx-auto mb-8"
             />
             <h1 className="text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg text-white">
               Create and Evaluate Job Assessments using AI
