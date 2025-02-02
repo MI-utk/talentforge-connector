@@ -49,7 +49,7 @@ export const HowItWorks = () => {
                 className="relative bg-[#111] border-none text-white hover:shadow-xl transition-shadow duration-300 group rounded-[24px]"
               >
                 <CardHeader className="pb-4">
-                  <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-white text-black flex items-center justify-center font-bold">
+                  <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-[#1A1F2C] text-white flex items-center justify-center font-bold">
                     {step.number}
                   </div>
                   <div className={`w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br ${step.iconColor} flex items-center justify-center relative`}>
