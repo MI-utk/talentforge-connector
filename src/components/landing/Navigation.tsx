@@ -27,12 +27,9 @@ export const Navigation = () => {
             </Link>
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center">
             <Button variant="ghost" className="text-white hover:text-testera-green hover:bg-white/10">
               Sign In
-            </Button>
-            <Button className="bg-testera-green hover:bg-testera-mint text-testera-firefly">
-              Get Started
             </Button>
           </div>
         </div>
