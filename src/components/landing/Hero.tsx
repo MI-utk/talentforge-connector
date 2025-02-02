@@ -4,11 +4,16 @@ import { Input } from "@/components/ui/input";
 export const Hero = () => {
   return (
     <div 
-      className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden bg-black"
+      className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden bg-black"
     >
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         <div className="flex flex-col items-center gap-8">
           <div className="text-shadow-lg max-w-4xl">
+            <img 
+              src="/lovable-uploads/d65dd7d2-7249-4d0b-92f1-01d6c26d28b4.png" 
+              alt="Testera Logo" 
+              className="w-24 h-24 mx-auto mb-8 invert"
+            />
             <h1 className="text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg text-white">
               Create and Evaluate Job Assessments using AI
             </h1>
