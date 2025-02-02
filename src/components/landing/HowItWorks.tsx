@@ -1,4 +1,4 @@
-import { ArrowRight, FileText, Edit3, Share2, BarChart3 } from "lucide-react";
+import { FileText, Edit3, Share2, BarChart3 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const steps = [
@@ -37,11 +37,11 @@ export const HowItWorks = () => {
     <section className="py-20 px-4 bg-black">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white">
-          Our Process
+          Simple, 4 Step Process
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {steps.map((step, index) => {
+          {steps.map((step) => {
             const Icon = step.icon;
             return (
               <Card
@@ -49,6 +49,9 @@ export const HowItWorks = () => {
                 className="relative bg-[#111] border-none text-white hover:shadow-xl transition-shadow duration-300 group rounded-[24px]"
               >
                 <CardHeader className="pb-4">
+                  <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-white text-black flex items-center justify-center font-bold">
+                    {step.number}
+                  </div>
                   <div className={`w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br ${step.iconColor} flex items-center justify-center relative`}>
                     <div className="absolute inset-0 rounded-2xl bg-gradient-to-br opacity-50 blur-lg animate-pulse" style={{ background: `linear-gradient(135deg, ${step.iconColor})` }} />
                     <Icon className="w-8 h-8 text-white relative z-10" />
@@ -62,9 +65,6 @@ export const HowItWorks = () => {
                     {step.description}
                   </p>
                 </CardContent>
-                {index < steps.length - 1 && (
-                  <ArrowRight className="hidden lg:block absolute top-1/2 -right-4 w-8 h-8 text-white -translate-y-1/2" />
-                )}
               </Card>
             );
           })}
