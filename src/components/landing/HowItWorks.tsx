@@ -36,8 +36,8 @@ export const HowItWorks = () => {
   return (
     <section className="py-20 px-4 bg-black">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white">
-          Simple, 4 Step Process
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
+          The Perfect Employee
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
