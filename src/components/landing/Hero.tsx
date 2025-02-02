@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 export const Hero = () => {
   return (
     <div 
-      className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden bg-blue-500"
+      className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden bg-[#222222]"
     >
       <div className="absolute inset-0 animate-glow pointer-events-none opacity-70"></div>
       <div className="relative z-10 max-w-7xl mx-auto w-full">
@@ -29,10 +29,6 @@ export const Hero = () => {
                 Create Assessment
               </Button>
             </div>
-            <p className="text-xl md:text-2xl text-white drop-shadow-lg font-medium">
-              AI-Powered Skill Assessments, Flexible Job Applications, and Real-Time
-              Feedback—All in One Platform.
-            </p>
           </div>
         </div>
       </div>
