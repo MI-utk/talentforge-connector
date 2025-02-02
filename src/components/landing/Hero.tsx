@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 export const Hero = () => {
   return (
     <div 
-      className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden bg-[#222222]"
+      className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden bg-black"
     >
       <div className="absolute inset-0 animate-glow pointer-events-none opacity-70"></div>
       <div className="relative z-10 max-w-7xl mx-auto w-full">
@@ -24,7 +24,7 @@ export const Hero = () => {
               />
               <Button 
                 size="lg" 
-                className="bg-testera-emerald hover:bg-testera-green text-white font-semibold shadow-lg whitespace-nowrap h-12"
+                className="bg-[#006BFF] hover:bg-[#0055CC] text-white font-semibold shadow-lg whitespace-nowrap h-12"
               >
                 Create Assessment
               </Button>
