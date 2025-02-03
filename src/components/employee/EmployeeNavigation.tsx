@@ -13,7 +13,7 @@ export const EmployeeNavigation = () => {
             </Link>
           </div>
           
-          <div className="flex-1 flex justify-center space-x-8">
+          <div className="absolute left-1/2 transform -translate-x-1/2 flex space-x-8">
             <Link to="/jobs" className="dark:text-[#F0EAD6] text-[#36454F] font-medium hover:opacity-80 transition-opacity">
               All Jobs
             </Link>
