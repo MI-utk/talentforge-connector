@@ -27,12 +27,6 @@ export const EmployeeHero = () => {
             <option>5+ years</option>
           </select>
           
-          <Input 
-            type="text"
-            placeholder="Enter Location/Company/Role"
-            className="h-12 bg-white dark:bg-gray-800 dark:text-[#E2DFD2] text-[#36454F] placeholder:text-gray-500"
-          />
-          
           <Button 
             className="h-12 px-8 bg-[#006BFF] hover:bg-[#0055CC] text-white font-semibold"
           >
