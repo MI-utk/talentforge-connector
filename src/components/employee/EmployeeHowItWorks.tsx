@@ -18,7 +18,7 @@ const steps = [
 
 export const EmployeeHowItWorks = () => {
   return (
-    <section className="py-20 px-4 bg-[#F1F0FB] dark:bg-[#222222]">
+    <section className="py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-[#F9F6EE] text-[#36454F]">
           Simple, 2 Step Process
@@ -45,7 +45,7 @@ export const EmployeeHowItWorks = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="dark:text-[#E2DFD2] text-[#36454F]">
+                  <p className="dark:text-[#E2DFD2] text-[#36454F] text-center">
                     {step.description}
                   </p>
                 </CardContent>
