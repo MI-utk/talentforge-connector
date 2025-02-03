@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 export const Hero = () => {
   return (
     <div 
-      className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden bg-black"
+      className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden dark:bg-black bg-white"
     >
       <div className="relative z-10 max-w-7xl mx-auto w-full pt-24">
         <div className="flex flex-col items-center gap-8">
@@ -14,17 +14,17 @@ export const Hero = () => {
               alt="Testera Logo" 
               className="w-32 h-32 mx-auto mb-8 animate-glow rounded-xl"
             />
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg text-white">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg dark:text-[#FAF9F6] text-testera-emerald">
               Create and Evaluate Job Assessments using AI
             </h1>
-            <h2 className="text-xl md:text-2xl text-white mb-6 drop-shadow-lg">
+            <h2 className="text-xl md:text-2xl mb-6 drop-shadow-lg dark:text-[#FAF9F6] text-testera-emerald">
               Tell us who you want to hire
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto mb-8">
               <Input 
                 type="text" 
                 placeholder="I want to hire mechanical engineer for steel rods plant"
-                className="bg-white text-gray-900 placeholder:text-gray-500 h-12"
+                className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder:text-gray-500 dark:placeholder:text-gray-400 h-12"
               />
               <Button 
                 size="lg" 
