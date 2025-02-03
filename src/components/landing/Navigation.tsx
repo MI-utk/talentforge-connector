@@ -8,29 +8,29 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold text-foreground">
+            <Link to="/" className="text-2xl font-bold dark:text-[#EDEADE] text-[#36454F]">
               Testera
             </Link>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="#features" className="text-foreground font-medium hover:text-testera-green transition-colors">
+            <Link to="#features" className="dark:text-[#EDEADE] text-[#36454F] font-medium hover:opacity-80 transition-opacity">
               Features
             </Link>
-            <Link to="#pricing" className="text-foreground font-medium hover:text-testera-green transition-colors">
+            <Link to="#pricing" className="dark:text-[#EDEADE] text-[#36454F] font-medium hover:opacity-80 transition-opacity">
               Pricing
             </Link>
-            <Link to="#about" className="text-foreground font-medium hover:text-testera-green transition-colors">
+            <Link to="#about" className="dark:text-[#EDEADE] text-[#36454F] font-medium hover:opacity-80 transition-opacity">
               About
             </Link>
-            <Link to="#contact" className="text-foreground font-medium hover:text-testera-green transition-colors">
+            <Link to="#contact" className="dark:text-[#EDEADE] text-[#36454F] font-medium hover:opacity-80 transition-opacity">
               Contact
             </Link>
           </div>
 
           <div className="flex items-center space-x-4">
             <ThemeToggle />
-            <Button variant="ghost" className="text-foreground hover:text-testera-green hover:bg-foreground/10">
+            <Button variant="ghost" className="dark:text-[#EDEADE] text-[#36454F] hover:opacity-80">
               Sign In
             </Button>
           </div>

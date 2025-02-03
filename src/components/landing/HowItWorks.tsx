@@ -36,7 +36,7 @@ export const HowItWorks = () => {
   return (
     <section className="py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-[#F5F5F5] text-[#FFE5B4]">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-[#EDEADE] text-[#36454F]">
           Simple, 4 Step Process
         </h2>
 
@@ -49,19 +49,19 @@ export const HowItWorks = () => {
                 className="relative bg-card border-border text-card-foreground hover:shadow-xl transition-shadow duration-300 group rounded-[24px]"
               >
                 <CardHeader className="pb-4">
-                  <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-muted text-muted-foreground flex items-center justify-center font-bold">
+                  <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-muted dark:text-[#EDEADE] text-[#36454F] flex items-center justify-center font-bold">
                     {step.number}
                   </div>
                   <div className={`w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br ${step.iconColor} flex items-center justify-center relative`}>
                     <div className="absolute inset-0 rounded-2xl bg-gradient-to-br opacity-50 blur-lg animate-pulse" style={{ background: `linear-gradient(135deg, ${step.iconColor})` }} />
                     <Icon className="w-8 h-8 text-background relative z-10" />
                   </div>
-                  <CardTitle className="text-xl text-center mb-2 dark:text-[#F5F5F5] text-[#FFE5B4]">
+                  <CardTitle className="text-xl text-center mb-2 dark:text-[#EDEADE] text-[#36454F]">
                     {step.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground text-center">
+                  <p className="dark:text-[#EDEADE] text-[#36454F]">
                     {step.description}
                   </p>
                 </CardContent>

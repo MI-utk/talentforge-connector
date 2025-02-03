@@ -19,7 +19,7 @@ export const Testimonials = () => {
   return (
     <section className="py-20 px-4 dark:bg-background bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-[#F5F5F5] text-[#FFE5B4]">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-[#EDEADE] text-[#36454F]">
           What Our Users Are Saying About Testera
         </h2>
 
@@ -44,11 +44,11 @@ export const Testimonials = () => {
                       />
                     ))}
                   </div>
-                  <p className="font-semibold dark:text-[#F5F5F5] text-[#FFE5B4]">{testimonial.author}</p>
-                  <p className="dark:text-gray-300 text-[#FFE5B4]">{testimonial.role}</p>
+                  <p className="font-semibold dark:text-[#EDEADE] text-[#36454F]">{testimonial.author}</p>
+                  <p className="dark:text-[#EDEADE] text-[#36454F]">{testimonial.role}</p>
                 </div>
               </div>
-              <p className="dark:text-gray-300 text-[#FFE5B4]">{testimonial.quote}</p>
+              <p className="dark:text-[#EDEADE] text-[#36454F]">{testimonial.quote}</p>
             </div>
           ))}
         </div>
