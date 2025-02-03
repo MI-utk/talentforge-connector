@@ -9,6 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/componen
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Building2, Clock, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const assessments = [
   {
@@ -51,9 +52,9 @@ export const ActiveAssessments = () => {
       </h2>
       
       <Carousel className="max-w-6xl mx-auto">
-        <CarouselContent>
+        <CarouselContent className="-ml-4">
           {assessments.map((assessment, index) => (
-            <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/3">
+            <CarouselItem key={index} className="pl-4 md:basis-1/3">
               <Card className="mx-2 cursor-pointer hover:shadow-lg transition-shadow h-full flex flex-col">
                 <CardHeader>
                   <div className="flex justify-between items-start">
@@ -107,6 +108,15 @@ export const ActiveAssessments = () => {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
+      
+      <div className="text-center mt-8">
+        <Link 
+          to="/assessments" 
+          className="text-sm font-medium hover:underline dark:text-[#F0EAD6] text-[#36454F]"
+        >
+          Browse all assessments
+        </Link>
+      </div>
     </div>
   );
 };

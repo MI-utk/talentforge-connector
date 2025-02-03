@@ -12,8 +12,8 @@ const Employee = () => {
     <div className="min-h-screen bg-background">
       <EmployeeNavigation />
       <EmployeeHero />
-      <ActiveCompanies />
       <ActiveAssessments />
+      <ActiveCompanies />
       <EmployeeHowItWorks />
       <EmployeeTestimonials />
       <EmployeeFAQ />

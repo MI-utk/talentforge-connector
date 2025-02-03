@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building2, MapPin, Briefcase } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const companies = [
   {
@@ -40,9 +41,9 @@ export const ActiveCompanies = () => {
       </h2>
       
       <Carousel className="max-w-6xl mx-auto">
-        <CarouselContent>
+        <CarouselContent className="-ml-4">
           {companies.map((company, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={index} className="pl-4 md:basis-1/3">
               <Card className="mx-2 cursor-pointer hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex items-center gap-4">
@@ -81,6 +82,15 @@ export const ActiveCompanies = () => {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
+
+      <div className="text-center mt-8">
+        <Link 
+          to="/companies" 
+          className="text-sm font-medium hover:underline dark:text-[#F0EAD6] text-[#36454F]"
+        >
+          Browse all companies
+        </Link>
+      </div>
     </div>
   );
 };

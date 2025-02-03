@@ -13,12 +13,12 @@ export const EmployeeNavigation = () => {
             </Link>
           </div>
           
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center justify-center space-x-8 flex-1">
             <Link to="/jobs" className="dark:text-[#F0EAD6] text-[#36454F] font-medium hover:opacity-80 transition-opacity">
-              Jobs
+              All Jobs
             </Link>
             <Link to="/companies" className="dark:text-[#F0EAD6] text-[#36454F] font-medium hover:opacity-80 transition-opacity">
-              Companies
+              All Companies
             </Link>
           </div>
 
