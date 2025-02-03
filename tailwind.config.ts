@@ -93,15 +93,15 @@ export default {
         },
         glow: {
           "0%": {
-            boxShadow: "0 0 50px rgba(147, 51, 234, 0.7)",
+            boxShadow: "0 0 100px rgba(147, 51, 234, 0.7)",
             background: "rgba(147, 51, 234, 0.2)",
           },
           "50%": {
-            boxShadow: "0 0 100px rgba(59, 130, 246, 0.8)",
+            boxShadow: "0 0 200px rgba(59, 130, 246, 0.8)",
             background: "rgba(59, 130, 246, 0.3)",
           },
           "100%": {
-            boxShadow: "0 0 50px rgba(147, 51, 234, 0.7)",
+            boxShadow: "0 0 100px rgba(147, 51, 234, 0.7)",
             background: "rgba(147, 51, 234, 0.2)",
           },
         },
