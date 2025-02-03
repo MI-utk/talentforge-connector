@@ -46,7 +46,7 @@ export const HowItWorks = () => {
             return (
               <Card
                 key={step.title}
-                className="relative bg-card border-border text-card-foreground hover:shadow-xl transition-shadow duration-300 group rounded-[24px]"
+                className="relative bg-[#F1F0FB] dark:bg-[#222222] border-border text-card-foreground hover:shadow-xl transition-shadow duration-300 group rounded-[24px]"
               >
                 <CardHeader className="pb-4">
                   <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-muted dark:text-[#F0EAD6] text-[#36454F] flex items-center justify-center font-bold">
