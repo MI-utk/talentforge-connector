@@ -42,22 +42,22 @@ export const Benefits = () => {
   return (
     <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-[#C8C8B4] text-[#36454F]">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-[#F9F6EE] text-[#36454F]">
           Benefits
         </h2>
 
         <div className="grid md:grid-cols-2 gap-16">
           <div>
-            <h3 className="text-2xl font-bold mb-8 dark:text-[#B8B8A4] text-[#36454F]">For Employers</h3>
+            <h3 className="text-2xl font-bold mb-8 dark:text-[#F0EAD6] text-[#36454F]">For Employers</h3>
             <div className="space-y-8">
               {employerBenefits.map((benefit) => (
                 <div key={benefit.title} className="flex gap-4">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-testera-green/20 flex items-center justify-center mt-1">
-                    <Check className="w-4 h-4 dark:text-[#B8B8A4] text-[#36454F]" />
+                    <Check className="w-4 h-4 dark:text-[#F0EAD6] text-[#36454F]" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 dark:text-[#B8B8A4] text-[#36454F]">{benefit.title}</h4>
-                    <p className="dark:text-[#A8A894] text-[#36454F] leading-relaxed">{benefit.description}</p>
+                    <h4 className="font-semibold mb-2 dark:text-[#F0EAD6] text-[#36454F]">{benefit.title}</h4>
+                    <p className="dark:text-[#E2DFD2] text-[#36454F] leading-relaxed">{benefit.description}</p>
                   </div>
                 </div>
               ))}
@@ -65,16 +65,16 @@ export const Benefits = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold mb-8 dark:text-[#B8B8A4] text-[#36454F]">For Job Seekers</h3>
+            <h3 className="text-2xl font-bold mb-8 dark:text-[#F0EAD6] text-[#36454F]">For Job Seekers</h3>
             <div className="space-y-8">
               {jobSeekerBenefits.map((benefit) => (
                 <div key={benefit.title} className="flex gap-4">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-testera-green/20 flex items-center justify-center mt-1">
-                    <Check className="w-4 h-4 dark:text-[#B8B8A4] text-[#36454F]" />
+                    <Check className="w-4 h-4 dark:text-[#F0EAD6] text-[#36454F]" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 dark:text-[#B8B8A4] text-[#36454F]">{benefit.title}</h4>
-                    <p className="dark:text-[#A8A894] text-[#36454F] leading-relaxed">{benefit.description}</p>
+                    <h4 className="font-semibold mb-2 dark:text-[#F0EAD6] text-[#36454F]">{benefit.title}</h4>
+                    <p className="dark:text-[#E2DFD2] text-[#36454F] leading-relaxed">{benefit.description}</p>
                   </div>
                 </div>
               ))}
