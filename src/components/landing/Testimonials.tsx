@@ -17,9 +17,9 @@ const testimonials = [
 
 export const Testimonials = () => {
   return (
-    <section className="py-20 px-4 dark:bg-black bg-white">
+    <section className="py-20 px-4 dark:bg-background bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-[#FAF9F6] text-testera-emerald">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-[#f3f3f3] text-testera-emerald">
           What Our Users Are Saying About Testera
         </h2>
 
@@ -27,7 +27,7 @@ export const Testimonials = () => {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.author}
-              className="dark:bg-[#111] bg-gray-50 p-8 rounded-[24px] border dark:border-white/10 border-gray-200"
+              className="dark:bg-[#222222] bg-gray-50 p-8 rounded-[24px] border dark:border-white/10 border-gray-200"
             >
               <div className="flex items-center mb-6">
                 <img
@@ -44,11 +44,11 @@ export const Testimonials = () => {
                       />
                     ))}
                   </div>
-                  <p className="font-semibold dark:text-[#FAF9F6] text-testera-emerald">{testimonial.author}</p>
-                  <p className="dark:text-gray-400 text-gray-600">{testimonial.role}</p>
+                  <p className="font-semibold dark:text-[#f1f1f1] text-testera-emerald">{testimonial.author}</p>
+                  <p className="dark:text-[#aaadb0] text-gray-600">{testimonial.role}</p>
                 </div>
               </div>
-              <p className="dark:text-gray-400 text-gray-600">{testimonial.quote}</p>
+              <p className="dark:text-[#aaadb0] text-gray-600">{testimonial.quote}</p>
             </div>
           ))}
         </div>

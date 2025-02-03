@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 export const Hero = () => {
   return (
     <div 
-      className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden dark:bg-black bg-white"
+      className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden dark:bg-background bg-white"
     >
       <div className="relative z-10 max-w-7xl mx-auto w-full pt-24">
         <div className="flex flex-col items-center gap-8">
@@ -14,10 +14,10 @@ export const Hero = () => {
               alt="Testera Logo" 
               className="w-32 h-32 mx-auto mb-8 animate-glow rounded-xl"
             />
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg dark:text-[#FAF9F6] text-testera-emerald">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg dark:text-[#f3f3f3] text-testera-emerald">
               Create and Evaluate Job Assessments using AI
             </h1>
-            <h2 className="text-xl md:text-2xl mb-6 drop-shadow-lg dark:text-[#FAF9F6] text-testera-emerald">
+            <h2 className="text-xl md:text-2xl mb-6 drop-shadow-lg dark:text-[#f1f1f1] text-testera-emerald">
               Tell us who you want to hire
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto mb-8">
