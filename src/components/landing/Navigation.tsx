@@ -24,7 +24,7 @@ export const Navigation = () => {
 
           <div className="flex items-center space-x-4">
             <ThemeToggle />
-            <Button variant="ghost" className="dark:text-[#F0EAD6] text-[#36454F] hover:opacity-80">
+            <Button className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white">
               Sign In
             </Button>
             <Button variant="ghost" asChild>
