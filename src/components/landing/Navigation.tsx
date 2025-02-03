@@ -20,12 +20,6 @@ export const Navigation = () => {
             <Link to="#pricing" className="dark:text-[#F0EAD6] text-[#36454F] font-medium hover:opacity-80 transition-opacity">
               Pricing
             </Link>
-            <Link to="#about" className="dark:text-[#F0EAD6] text-[#36454F] font-medium hover:opacity-80 transition-opacity">
-              About
-            </Link>
-            <Link to="#contact" className="dark:text-[#F0EAD6] text-[#36454F] font-medium hover:opacity-80 transition-opacity">
-              Contact
-            </Link>
           </div>
 
           <div className="flex items-center space-x-4">
