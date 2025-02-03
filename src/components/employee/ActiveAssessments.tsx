@@ -54,7 +54,7 @@ export const ActiveAssessments = () => {
         <CarouselContent>
           {assessments.map((assessment, index) => (
             <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/3">
-              <Card className="mx-2 cursor-pointer hover:shadow-lg transition-shadow">
+              <Card className="mx-2 cursor-pointer hover:shadow-lg transition-shadow h-full flex flex-col">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <CardTitle className="text-xl dark:text-[#F9F6EE] text-[#36454F]">
@@ -71,7 +71,7 @@ export const ActiveAssessments = () => {
                     <span>{assessment.company}</span>
                   </div>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex-grow">
                   <div className="space-y-4">
                     <div className="flex flex-wrap gap-2">
                       {assessment.tags.map((tag, tagIndex) => (
@@ -98,7 +98,7 @@ export const ActiveAssessments = () => {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full">Give Assessment</Button>
+                  <Button className="w-full bg-testera-emerald hover:bg-testera-firefly">Give Assessment</Button>
                 </CardFooter>
               </Card>
             </CarouselItem>
