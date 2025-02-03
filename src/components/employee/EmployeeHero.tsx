@@ -29,7 +29,7 @@ export const EmployeeHero = () => {
           
           <Input 
             type="text"
-            placeholder="Enter location"
+            placeholder="Enter Location/Company/Role"
             className="h-12 bg-white dark:bg-gray-800 dark:text-[#E2DFD2] text-[#36454F] placeholder:text-gray-500"
           />
           
