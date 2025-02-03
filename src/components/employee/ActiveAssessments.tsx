@@ -99,7 +99,7 @@ export const ActiveAssessments = () => {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full bg-testera-emerald hover:bg-testera-firefly text-white">Give Assessment</Button>
+                  <Button className="w-full bg-[#36454F] hover:bg-[#2A363F] text-white">Give Assessment</Button>
                 </CardFooter>
               </Card>
             </CarouselItem>
