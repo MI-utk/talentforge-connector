@@ -20,12 +20,30 @@ const testimonials = [
     role: "HR Manager",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
   },
+  {
+    quote: "The platform's efficiency in matching candidates with the right positions is remarkable. Highly recommended!",
+    author: "David K.",
+    role: "Tech Recruiter",
+    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7",
+  },
+  {
+    quote: "Using Testera has transformed our hiring process. The quality of candidates has improved significantly.",
+    author: "Jennifer P.",
+    role: "COO",
+    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e",
+  },
+  {
+    quote: "The assessment tools are incredibly accurate. We've reduced our time-to-hire by 50%!",
+    author: "Robert M.",
+    role: "Hiring Manager",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+  },
 ];
 
 export const Testimonials = () => {
   return (
     <section className="py-20 px-4 dark:bg-background bg-white">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-[#F9F6EE] text-[#36454F]">
           What Our Users Are Saying About Testera
         </h2>
@@ -34,13 +52,14 @@ export const Testimonials = () => {
           opts={{
             align: "start",
             loop: true,
+            slides: { perView: 3, spacing: 16 },
           }}
-          className="w-full max-w-4xl mx-auto"
+          className="w-full"
         >
           <CarouselContent>
             {testimonials.map((testimonial) => (
-              <CarouselItem key={testimonial.author} className="md:basis-1/1">
-                <div className="dark:bg-[#222222] bg-gray-50 p-8 rounded-[24px] border dark:border-white/10 border-gray-200">
+              <CarouselItem key={testimonial.author} className="md:basis-1/3">
+                <div className="h-full dark:bg-[#222222] bg-gray-50 p-8 rounded-[24px] border dark:border-white/10 border-gray-200">
                   <div className="flex items-center mb-6">
                     <img
                       src={testimonial.image}

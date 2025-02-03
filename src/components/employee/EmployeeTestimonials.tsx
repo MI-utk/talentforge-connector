@@ -20,12 +20,30 @@ const testimonials = [
     role: "Data Analyst",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
   },
+  {
+    quote: "I got multiple job offers within weeks of using Testera. The AI matching really works!",
+    author: "James H.",
+    role: "UX Designer",
+    image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6",
+  },
+  {
+    quote: "The platform made it easy to demonstrate my skills to employers. Highly recommended!",
+    author: "Lisa M.",
+    role: "Product Manager",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+  },
+  {
+    quote: "Best career move I've made. The assessment process was smooth and effective.",
+    author: "Chris P.",
+    role: "Frontend Developer",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+  },
 ];
 
 export const EmployeeTestimonials = () => {
   return (
     <section className="py-20 px-4 dark:bg-background bg-white">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-[#F9F6EE] text-[#36454F]">
           Success Stories from Job Seekers
         </h2>
@@ -34,13 +52,14 @@ export const EmployeeTestimonials = () => {
           opts={{
             align: "start",
             loop: true,
+            slides: { perView: 3, spacing: 16 },
           }}
-          className="w-full max-w-4xl mx-auto"
+          className="w-full"
         >
           <CarouselContent>
             {testimonials.map((testimonial) => (
-              <CarouselItem key={testimonial.author} className="md:basis-1/1">
-                <div className="dark:bg-[#222222] bg-gray-50 p-8 rounded-[24px] border dark:border-white/10 border-gray-200">
+              <CarouselItem key={testimonial.author} className="md:basis-1/3">
+                <div className="h-full dark:bg-[#222222] bg-gray-50 p-8 rounded-[24px] border dark:border-white/10 border-gray-200">
                   <div className="flex items-center mb-6">
                     <img
                       src={testimonial.image}
