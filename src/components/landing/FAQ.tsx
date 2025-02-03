@@ -28,7 +28,7 @@ export const FAQ = () => {
   return (
     <section className="py-20 px-4 bg-background">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-foreground">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-[#F5F5F5] text-[#141414]">
           Common Questions
         </h2>
 

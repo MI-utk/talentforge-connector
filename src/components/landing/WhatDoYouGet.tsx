@@ -27,7 +27,7 @@ export const WhatDoYouGet = () => {
   return (
     <section className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-testera-emerald">
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center dark:text-[#F5F5F5] text-[#141414]">
           AI Is Here To Help You Hire
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
@@ -39,7 +39,7 @@ export const WhatDoYouGet = () => {
                 </div>
               </div>
               <CardHeader>
-                <CardTitle className="text-lg text-testera-emerald">{feature.title}</CardTitle>
+                <CardTitle className="text-lg dark:text-[#F5F5F5] text-[#141414]">{feature.title}</CardTitle>
                 <CardDescription className="text-gray-600 text-sm">{feature.description}</CardDescription>
               </CardHeader>
             </Card>

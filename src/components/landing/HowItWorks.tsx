@@ -36,7 +36,7 @@ export const HowItWorks = () => {
   return (
     <section className="py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-foreground">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-[#F5F5F5] text-[#141414]">
           Simple, 4 Step Process
         </h2>
 
@@ -56,7 +56,7 @@ export const HowItWorks = () => {
                     <div className="absolute inset-0 rounded-2xl bg-gradient-to-br opacity-50 blur-lg animate-pulse" style={{ background: `linear-gradient(135deg, ${step.iconColor})` }} />
                     <Icon className="w-8 h-8 text-background relative z-10" />
                   </div>
-                  <CardTitle className="text-xl text-center mb-2">
+                  <CardTitle className="text-xl text-center mb-2 dark:text-[#F5F5F5] text-[#141414]">
                     {step.title}
                   </CardTitle>
                 </CardHeader>
