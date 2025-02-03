@@ -34,9 +34,9 @@ const steps = [
 
 export const HowItWorks = () => {
   return (
-    <section className="py-20 px-4 bg-black">
+    <section className="py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-[#FAF9F6]">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-foreground">
           Simple, 4 Step Process
         </h2>
 
@@ -46,22 +46,22 @@ export const HowItWorks = () => {
             return (
               <Card
                 key={step.title}
-                className="relative bg-[#111] border-none text-[#FAF9F6] hover:shadow-xl transition-shadow duration-300 group rounded-[24px]"
+                className="relative bg-card border-border text-card-foreground hover:shadow-xl transition-shadow duration-300 group rounded-[24px]"
               >
                 <CardHeader className="pb-4">
-                  <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-[#1A1F2C] text-[#FAF9F6] flex items-center justify-center font-bold">
+                  <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-muted text-muted-foreground flex items-center justify-center font-bold">
                     {step.number}
                   </div>
                   <div className={`w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br ${step.iconColor} flex items-center justify-center relative`}>
                     <div className="absolute inset-0 rounded-2xl bg-gradient-to-br opacity-50 blur-lg animate-pulse" style={{ background: `linear-gradient(135deg, ${step.iconColor})` }} />
-                    <Icon className="w-8 h-8 text-[#FAF9F6] relative z-10" />
+                    <Icon className="w-8 h-8 text-background relative z-10" />
                   </div>
                   <CardTitle className="text-xl text-center mb-2">
                     {step.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-400 text-center">
+                  <p className="text-muted-foreground text-center">
                     {step.description}
                   </p>
                 </CardContent>

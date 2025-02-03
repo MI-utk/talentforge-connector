@@ -26,17 +26,17 @@ const faqs = [
 
 export const FAQ = () => {
   return (
-    <section className="py-20 px-4 bg-black">
+    <section className="py-20 px-4 bg-background">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-[#FAF9F6]">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-foreground">
           Common Questions
         </h2>
 
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border-white/10">
-              <AccordionTrigger className="text-[#FAF9F6]">{faq.question}</AccordionTrigger>
-              <AccordionContent className="text-gray-400">{faq.answer}</AccordionContent>
+            <AccordionItem key={index} value={`item-${index}`} className="border-border">
+              <AccordionTrigger className="text-foreground">{faq.question}</AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">{faq.answer}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
