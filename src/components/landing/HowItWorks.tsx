@@ -34,7 +34,7 @@ const steps = [
 
 export const HowItWorks = () => {
   return (
-    <section className="py-20 px-4 bg-background">
+    <section className="py-20 px-4 bg-[#F1F0FB] dark:bg-[#222222]">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-[#F9F6EE] text-[#36454F]">
           Simple, 4 Step Process
