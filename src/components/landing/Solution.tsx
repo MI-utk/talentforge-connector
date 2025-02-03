@@ -52,10 +52,10 @@ export const Solution = () => {
     <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 dark:text-[#F5F5F5] text-[#141414]">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 dark:text-[#F5F5F5] text-[#FFE5B4]">
             Introducing Testera —The Future of Job Matching
           </h2>
-          <p className="text-xl dark:text-gray-300 text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl dark:text-gray-300 text-[#FFE5B4] max-w-3xl mx-auto">
             At Testera, we make hiring smarter, faster, and more transparent. Our
             platform connects job seekers with employers through AI-driven tests
             designed to assess real-world skills.
@@ -73,8 +73,8 @@ export const Solution = () => {
               {EmployerFeatures.map((feature) => (
                 <div key={feature.title} className="flex flex-col gap-6">
                   <div>
-                    <h3 className="text-3xl md:text-4xl font-bold mb-3 dark:text-[#F5F5F5] text-[#141414]">{feature.title}</h3>
-                    <p className="text-lg dark:text-gray-300 text-gray-600">{feature.description}</p>
+                    <h3 className="text-3xl md:text-4xl font-bold mb-3 dark:text-[#F5F5F5] text-[#FFE5B4]">{feature.title}</h3>
+                    <p className="text-lg dark:text-gray-300 text-[#FFE5B4]">{feature.description}</p>
                   </div>
                   <img
                     src={feature.image}
@@ -91,8 +91,8 @@ export const Solution = () => {
               {JobSeekerFeatures.map((feature) => (
                 <div key={feature.title} className="flex flex-col gap-6">
                   <div>
-                    <h3 className="text-3xl md:text-4xl font-bold mb-3 dark:text-[#F5F5F5] text-[#141414]">{feature.title}</h3>
-                    <p className="text-lg dark:text-gray-300 text-gray-600">{feature.description}</p>
+                    <h3 className="text-3xl md:text-4xl font-bold mb-3 dark:text-[#F5F5F5] text-[#FFE5B4]">{feature.title}</h3>
+                    <p className="text-lg dark:text-gray-300 text-[#FFE5B4]">{feature.description}</p>
                   </div>
                   <img
                     src={feature.image}

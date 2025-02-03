@@ -14,17 +14,17 @@ export const Hero = () => {
               alt="Testera Logo" 
               className="w-32 h-32 mx-auto mb-8 animate-glow rounded-xl"
             />
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg dark:text-[#F5F5F5] text-[#141414]">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg dark:text-[#F5F5F5] text-[#FFE5B4]">
               Create and Evaluate Job Assessments using AI
             </h1>
-            <h2 className="text-xl md:text-2xl mb-6 drop-shadow-lg dark:text-[#F5F5F5] text-[#141414]">
+            <h2 className="text-xl md:text-2xl mb-6 drop-shadow-lg dark:text-[#F5F5F5] text-[#FFE5B4]">
               Tell us who you want to hire
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto mb-8">
               <Input 
                 type="text" 
                 placeholder="I want to hire mechanical engineer for steel rods plant"
-                className="bg-white dark:bg-gray-800 text-[#141414] dark:text-[#F5F5F5] placeholder:text-gray-500 dark:placeholder:text-gray-400 h-12"
+                className="bg-white dark:bg-gray-800 text-[#FFE5B4] dark:text-[#F5F5F5] placeholder:text-gray-500 dark:placeholder:text-gray-400 h-12"
               />
               <Button 
                 size="lg" 

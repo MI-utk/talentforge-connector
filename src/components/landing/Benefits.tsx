@@ -42,21 +42,21 @@ export const Benefits = () => {
   return (
     <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-[#F5F5F5] text-[#141414]">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-[#F5F5F5] text-[#FFE5B4]">
           Benefits
         </h2>
 
         <div className="grid md:grid-cols-2 gap-16">
           <div>
-            <h3 className="text-2xl font-bold mb-8 dark:text-[#F5F5F5] text-[#141414]">For Employers</h3>
+            <h3 className="text-2xl font-bold mb-8 dark:text-[#F5F5F5] text-[#FFE5B4]">For Employers</h3>
             <div className="space-y-8">
               {employerBenefits.map((benefit) => (
                 <div key={benefit.title} className="flex gap-4">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-testera-green/20 flex items-center justify-center mt-1">
-                    <Check className="w-4 h-4 dark:text-[#F5F5F5] text-[#141414]" />
+                    <Check className="w-4 h-4 dark:text-[#F5F5F5] text-[#FFE5B4]" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 dark:text-[#F5F5F5] text-[#141414]">{benefit.title}</h4>
+                    <h4 className="font-semibold mb-2 dark:text-[#F5F5F5] text-[#FFE5B4]">{benefit.title}</h4>
                     <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{benefit.description}</p>
                   </div>
                 </div>
@@ -65,15 +65,15 @@ export const Benefits = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold mb-8 dark:text-[#F5F5F5] text-[#141414]">For Job Seekers</h3>
+            <h3 className="text-2xl font-bold mb-8 dark:text-[#F5F5F5] text-[#FFE5B4]">For Job Seekers</h3>
             <div className="space-y-8">
               {jobSeekerBenefits.map((benefit) => (
                 <div key={benefit.title} className="flex gap-4">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-testera-green/20 flex items-center justify-center mt-1">
-                    <Check className="w-4 h-4 dark:text-[#F5F5F5] text-[#141414]" />
+                    <Check className="w-4 h-4 dark:text-[#F5F5F5] text-[#FFE5B4]" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 dark:text-[#F5F5F5] text-[#141414]">{benefit.title}</h4>
+                    <h4 className="font-semibold mb-2 dark:text-[#F5F5F5] text-[#FFE5B4]">{benefit.title}</h4>
                     <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{benefit.description}</p>
                   </div>
                 </div>
