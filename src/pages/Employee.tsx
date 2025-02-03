@@ -1,5 +1,6 @@
 import { EmployeeHero } from "@/components/employee/EmployeeHero";
 import { ActiveAssessments } from "@/components/employee/ActiveAssessments";
+import { ActiveCompanies } from "@/components/employee/ActiveCompanies";
 import { Navigation } from "@/components/landing/Navigation";
 
 const Employee = () => {
@@ -8,6 +9,7 @@ const Employee = () => {
       <Navigation />
       <EmployeeHero />
       <ActiveAssessments />
+      <ActiveCompanies />
     </div>
   );
 };

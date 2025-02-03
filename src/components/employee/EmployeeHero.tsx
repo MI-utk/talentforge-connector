@@ -14,7 +14,7 @@ export const EmployeeHero = () => {
           <div className="relative flex-1">
             <Input 
               type="text"
-              placeholder="Enter skills / designations / companies"
+              placeholder="Enter Location/ Company/ Role"
               className="w-full h-12 pl-12 bg-white dark:bg-gray-800 dark:text-[#E2DFD2] text-[#36454F] placeholder:text-gray-500"
             />
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
