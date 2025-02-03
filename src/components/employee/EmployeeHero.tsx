@@ -34,7 +34,7 @@ export const EmployeeHero = () => {
           </select>
           
           <Button 
-            className="h-12 px-8 bg-[#006BFF] hover:bg-[#0055CC] text-white font-semibold"
+            className="h-12 px-8 bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold"
           >
             Search
           </Button>
