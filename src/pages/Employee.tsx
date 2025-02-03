@@ -1,15 +1,15 @@
 import { EmployeeHero } from "@/components/employee/EmployeeHero";
-import { ActiveAssessments } from "@/components/employee/ActiveAssessments";
 import { ActiveCompanies } from "@/components/employee/ActiveCompanies";
-import { Navigation } from "@/components/landing/Navigation";
+import { ActiveAssessments } from "@/components/employee/ActiveAssessments";
+import { EmployeeHowItWorks } from "@/components/employee/EmployeeHowItWorks";
 
 const Employee = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <div className="min-h-screen">
       <EmployeeHero />
-      <ActiveAssessments />
       <ActiveCompanies />
+      <ActiveAssessments />
+      <EmployeeHowItWorks />
     </div>
   );
 };
