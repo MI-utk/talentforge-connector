@@ -1,4 +1,11 @@
 import { Star } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const testimonials = [
   {
@@ -23,35 +30,50 @@ export const EmployeeTestimonials = () => {
           Success Stories from Job Seekers
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {testimonials.map((testimonial) => (
-            <div
-              key={testimonial.author}
-              className="dark:bg-[#222222] bg-gray-50 p-8 rounded-[24px] border dark:border-white/10 border-gray-200"
-            >
-              <div className="flex items-center mb-6">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.author}
-                  className="w-16 h-16 rounded-full object-cover mr-4"
-                />
-                <div className="flex flex-col">
-                  <div className="flex mb-2">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="w-5 h-5 text-yellow-400 fill-current"
-                      />
-                    ))}
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full max-w-4xl mx-auto"
+        >
+          <CarouselContent>
+            {testimonials.map((testimonial) => (
+              <CarouselItem key={testimonial.author} className="md:basis-1/1">
+                <div className="dark:bg-[#222222] bg-gray-50 p-8 rounded-[24px] border dark:border-white/10 border-gray-200">
+                  <div className="flex items-center mb-6">
+                    <img
+                      src={testimonial.image}
+                      alt={testimonial.author}
+                      className="w-16 h-16 rounded-full object-cover mr-4"
+                    />
+                    <div className="flex flex-col">
+                      <div className="flex mb-2">
+                        {[...Array(5)].map((_, i) => (
+                          <Star
+                            key={i}
+                            className="w-5 h-5 text-yellow-400 fill-current"
+                          />
+                        ))}
+                      </div>
+                      <p className="font-semibold dark:text-[#F0EAD6] text-[#36454F]">
+                        {testimonial.author}
+                      </p>
+                      <p className="dark:text-[#E2DFD2] text-[#36454F]">
+                        {testimonial.role}
+                      </p>
+                    </div>
                   </div>
-                  <p className="font-semibold dark:text-[#F0EAD6] text-[#36454F]">{testimonial.author}</p>
-                  <p className="dark:text-[#E2DFD2] text-[#36454F]">{testimonial.role}</p>
+                  <p className="dark:text-[#E2DFD2] text-[#36454F]">
+                    {testimonial.quote}
+                  </p>
                 </div>
-              </div>
-              <p className="dark:text-[#E2DFD2] text-[#36454F]">{testimonial.quote}</p>
-            </div>
-          ))}
-        </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </div>
     </section>
   );
