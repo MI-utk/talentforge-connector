@@ -24,7 +24,7 @@ export const EmployeeNavigation = () => {
 
           <div className="flex items-center space-x-4">
             <ThemeToggle />
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white">
               Sign In
             </Button>
             <Link to="/" className="text-sm dark:text-[#F0EAD6] text-[#36454F] font-medium hover:opacity-80 transition-opacity">
