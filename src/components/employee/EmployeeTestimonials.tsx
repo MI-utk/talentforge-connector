@@ -52,13 +52,12 @@ export const EmployeeTestimonials = () => {
           opts={{
             align: "start",
             loop: true,
-            slides: { perView: 3, spacing: 16 },
           }}
           className="w-full"
         >
-          <CarouselContent>
+          <CarouselContent className="-ml-4">
             {testimonials.map((testimonial) => (
-              <CarouselItem key={testimonial.author} className="md:basis-1/3">
+              <CarouselItem key={testimonial.author} className="pl-4 md:basis-1/3">
                 <div className="h-full dark:bg-[#222222] bg-gray-50 p-8 rounded-[24px] border dark:border-white/10 border-gray-200">
                   <div className="flex items-center mb-6">
                     <img
