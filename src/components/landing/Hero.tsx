@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 export const Hero = () => {
   return (
     <div 
-      className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden dark:bg-background bg-white"
+      className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 relative overflow-hidden bg-background"
     >
       <div className="relative z-10 max-w-7xl mx-auto w-full pt-24">
         <div className="flex flex-col items-center gap-8">
