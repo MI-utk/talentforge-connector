@@ -27,7 +27,7 @@ export const EmployeeNavigation = () => {
             <Button variant="ghost" className="dark:text-[#F0EAD6] text-[#36454F] hover:opacity-80">
               Sign In
             </Button>
-            <Link to="/" className="text-sm dark:text-[#F0EAD6] text-[#36454F] font-medium hover:opacity-80 transition-opacity">
+            <Link to="/" className="text-xs dark:text-[#F0EAD6] text-[#36454F] hover:opacity-80 transition-opacity">
               Testera for Employers
             </Link>
           </div>
