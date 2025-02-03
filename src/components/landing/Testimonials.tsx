@@ -45,10 +45,10 @@ export const Testimonials = () => {
                     ))}
                   </div>
                   <p className="font-semibold dark:text-[#F5F5F5] text-[#141414]">{testimonial.author}</p>
-                  <p className="dark:text-[#aaadb0] text-[#141414]/70">{testimonial.role}</p>
+                  <p className="dark:text-gray-300 text-gray-600">{testimonial.role}</p>
                 </div>
               </div>
-              <p className="dark:text-[#aaadb0] text-[#141414]/70">{testimonial.quote}</p>
+              <p className="dark:text-gray-300 text-gray-600">{testimonial.quote}</p>
             </div>
           ))}
         </div>
