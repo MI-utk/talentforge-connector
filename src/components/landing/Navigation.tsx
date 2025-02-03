@@ -13,7 +13,7 @@ export const Navigation = () => {
             </Link>
           </div>
           
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="flex items-center justify-center space-x-8">
             <Link to="#features" className="dark:text-[#F0EAD6] text-[#36454F] font-medium hover:opacity-80 transition-opacity">
               Features
             </Link>
