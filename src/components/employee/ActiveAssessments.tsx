@@ -52,7 +52,7 @@ export const ActiveAssessments = () => {
       <Carousel className="max-w-6xl mx-auto">
         <CarouselContent>
           {assessments.map((assessment, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
+            <CarouselItem key={index} className="md:basis-1/4 lg:basis-1/4">
               <Card className="mx-2 cursor-pointer hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex justify-between items-start">
